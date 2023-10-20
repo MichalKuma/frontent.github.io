@@ -3,12 +3,21 @@
     padding: 0;
 }
 
+
 .main {
     width: 100%;
     background: linear-gradient(to top, rgba(0, 0, 0, 0.5)50%, rgba(0, 0, 0, 0.5)50%), url(me.jpg);
     background-position: center;
     background-size: cover;
     height: 100vh;
+}
+
+.img {
+    width: 40%;
+    position: absolute;
+    right: 0%;
+    bottom: 0%;
+
 }
 
 .navbar {
@@ -24,13 +33,28 @@
 }
 
 .logo {
-    color: #4c13d3;
+    color: #fcb900;
     font-size: 60px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     padding-left: 20px;
     float: left;
     padding-top: 10px;
     margin-top: 5px;
+
+    text-shadow: 1px 1px 1px #000000,
+        1px 2px 1px #5b9ab8,
+        1px 3px 1px #5d95bb,
+        1px 4px 1px #7ac3c5,
+        1px 5px 1px #88c1d3,
+        1px 6px 1px #e0e0e0,
+        1px 7px 1px #e0e0e0,
+        1px 8px 1px #e0e0e0,
+        1px 9px 1px #e0e0e0,
+        1px 10px 1px #e0e0e0,
+        1px 18px 6px rgba(16, 16, 16, 0.4),
+        1px 22px 10px rgba(16, 16, 16, 0.2),
+        1px 25px 35px rgba(16, 16, 16, 0.2),
+        1px 30px 60px rgba(16, 16, 16, 0.4);
 }
 
 .menu {
@@ -50,7 +74,7 @@ ul li {
     list-style: none;
     margin-left: 62px;
     margin-top: 27px;
-    font-size: 14px;
+    font-size: 16px;
 }
 
 ul li a {
@@ -61,8 +85,9 @@ ul li a {
     transition: 0.4s ease-in-out;
 }
 
+/*Home, About me, Contact*/
 ul li a:hover {
-    color: #4c13d3;
+    color: #fcb900;
 }
 
 .search {
@@ -90,7 +115,7 @@ ul li a:hover {
 .btn {
     width: 100px;
     height: 40px;
-    background: #4c13d3;
+    background: #fcb900;
     border: 2px solid rgb(209, 204, 204);
     margin-top: 13px;
     color: #fff;
@@ -113,11 +138,12 @@ ul li a:hover {
     outline: none;
 }
 
+/*I am looking for a job*/
 .content {
     width: 1200px;
     height: auto;
     margin: auto;
-    color: #fff;
+    color: #fcb900;
     position: relative;
 }
 
@@ -127,7 +153,8 @@ ul li a:hover {
     font-family: Arial;
     letter-spacing: 1.2px;
     line-height: 30px;
-    font-size: 20px;
+    font-size: 30px;
+    color: #fff;
 }
 
 .content h1 {
@@ -138,10 +165,16 @@ ul li a:hover {
     letter-spacing: 2px;
 }
 
+.cn {
+    position: absolute;
+    bottom: -30%;
+}
+
+
 .content .cn {
     width: 160px;
     height: 40px;
-    background: #4c13d3;
+    background: #fcb900;
     border: none;
     margin-bottom: 10px;
     margin-left: 20px;
@@ -160,10 +193,11 @@ ul li a:hover {
 
 .cn:hover {
     background-color: #fff;
+
 }
 
 .content span {
-    color: #4c13d3;
+    color: #ffffff;
     font-size: 65px
 }
 
@@ -183,7 +217,7 @@ ul li a:hover {
     width: 220px;
     font-family: sans-serif;
     text-align: center;
-    color: #4c13d3;
+    color: #fcb900;
     font-size: 22px;
     background-color: #fff;
     border-radius: 10px;
@@ -195,7 +229,7 @@ ul li a:hover {
     width: 240px;
     height: 35px;
     background: transparent;
-    border-bottom: 1px solid #4c13d3;
+    border-bottom: 1px solid #0273cf;
     border-top: none;
     border-right: none;
     border-left: none;
@@ -218,7 +252,7 @@ ul li a:hover {
 .btnn {
     width: 240px;
     height: 40px;
-    background: #4c13d3;
+    background: #fcb900;
     border: none;
     margin-top: 30px;
     font-size: 18px;
@@ -230,7 +264,7 @@ ul li a:hover {
 
 .btnn:hover {
     background: #fff;
-    color: #4c13d3;
+    color: #fcb900;
 }
 
 .btnn a {
@@ -248,7 +282,7 @@ ul li a:hover {
 
 .form .link a {
     text-decoration: none;
-    color: #4c13d3;
+    color: #0273cf;
 }
 
 .liw {
@@ -256,6 +290,12 @@ ul li a:hover {
     padding-bottom: 10px;
     text-align: center;
 }
+
+.icons {
+    position: absolute;
+    bottom: -40%;
+}
+
 
 .icons a {
     text-decoration: none;
@@ -271,5 +311,6 @@ ul li a:hover {
 }
 
 .icons ion-icon:hover {
-    color: #4c13d3;
+    color: #0273cf;
+
 }

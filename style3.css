@@ -4,36 +4,31 @@
 }
 
 .logo {
-    color: #4c13d3;
+    color: #fcb900;
     font-size: 60px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     padding-left: 0px;
-    padding-top: 0px;
+    padding-top: 60px;
     margin-top: 0px;
     text-align: center;
-    text-decoration: underline;
 }
 
 .aboutme {
     font-size: 30px;
-    color: white;
+    color: #ffffff;
     margin: 0px;
-    padding: 240px;
-    font-weight: 800px;
-
-
+    padding: 100px;
 }
+
 
 .main {
     width: 100%;
-    background: linear-gradient(to top, rgba(0, 0, 0, 0.5)50%, rgba(0, 0, 0, 0.5)50%), url(ocean.jpg);
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.5)50%, rgba(0, 0, 0, 0.5)50%), url(web.jpg);
     background-position: center;
     background-size: cover;
     height: 100vh;
 }
 
-.navbar {
-    width: 1600px;
-    height: 75px;
-    margin: auto;
+.space {
+    line-height: 40px;
 }
