@@ -3,7 +3,7 @@
 body {
     font-family: "Roboto", Helvetica, sans-serif;
     background: #ebe7e7;
-    background: linear-gradient(to top, rgba(0, 0, 0, 0.5)50%, rgba(0, 0, 0, 0.5)50%), url(universe.jpg);
+    background: linear-gradient(to top, rgba(241, 239, 239, 0.5rgba(252, 249, 249, 0.5), 0.5)50%), url(background.webp);
 }
 
 p {
@@ -17,6 +17,7 @@ p {
 
 .m-b-15 {
     margin-bottom: 15px;
+    color: #1d2446;
 }
 
 .m-r-5 {
@@ -24,8 +25,13 @@ p {
 }
 
 .text-center {
-    color: rgb(255, 255, 255);
+    color: #ececec;
+    position: relative;
+    left: 280px;
+    background-color: rgb(22, 166, 250);
     font-size: 60px;
+    border-radius: 5px;
+    width: 50%
 }
 
 .light-grey {
@@ -33,7 +39,7 @@ p {
 }
 
 .contact-form {
-    background: #fff;
+    background: #ececec;
     box-shadow: 0 23px 73px -17px rgba(0, 0, 0, 0.16);
     display: flex;
     flex-wrap: wrap;
@@ -46,13 +52,13 @@ p {
 }
 
 .contact-form-box__left {
-    background: #fcb900;
+    background: rgb(22, 166, 250);
     /* fallback for old browsers */
     background-image: url("../images/bg.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    color: #000000;
+    color: rgb(12, 70, 117);
     padding: 30px 30px 80px 30px;
     width: 100%;
     border-radius: 5px;
@@ -78,7 +84,7 @@ p {
 .contact-form-box__left_footer a {
     margin-right: 2px;
     padding: 8px;
-    color: rgb(0, 0, 0);
+    color: rgb(12, 70, 117);
 }
 
 .contact-form-box__left_footer a:hover {
@@ -98,13 +104,13 @@ p {
 }
 
 .btn-primary {
-    background: #fcb900;
-    border-color: #fcb900;
+    background: rgb(22, 166, 250);
+    border-color: rgb(22, 166, 250);
 }
 
 .btn-primary:hover {
-    background: #000000;
-    border-color: #000000;
+    background: #bebebe;
+    border-color: #bebebe;
 }
 
 /* Making the label break the flow */
@@ -118,7 +124,7 @@ p {
 
 /* Hide the browser-specific focus styles */
 .floating-label-field {
-    color: rgba(44, 62, 80, .75);
+    color: #bebebe;
     border-width: 0;
     z-index: 2000;
 }

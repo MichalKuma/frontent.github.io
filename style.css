@@ -1,22 +1,21 @@
 * {
-    margin: 0;
-    padding: 0;
+    margin: 0px;
+    padding: 0px;
 }
 
-
-.main {
-    width: 100%;
-    background: linear-gradient(to top, rgba(0, 0, 0, 0.5)50%, rgba(0, 0, 0, 0.5)50%), url(me.jpg);
-    background-position: center;
-    background-size: cover;
-    height: 100vh;
+body {
+    font-family: "Roboto", Helvetica, sans-serif;
+    background: #ebe7e7;
+    background: linear-gradient(to top, rgba(241, 239, 239, 0.5rgba(252, 249, 249, 0.5), 0.5)50%), url(background.webp);
 }
 
 .img {
-    width: 40%;
     position: absolute;
-    right: 0%;
-    bottom: 0%;
+    bottom: 260px;
+    right: 320px;
+    border-radius: 260px;
+    border-color: #0273cf;
+
 
 }
 
@@ -26,21 +25,21 @@
     margin: auto;
 }
 
-.icon {
-    width: 200px;
+/*My name LOGO*/
+.logo {
+    color: rgb(22, 166, 250);
+    padding-top: 10px;
+    padding-left: 20px;
+    margin-top: 10px;
+    font-size: 60px;
     float: left;
-    height: 70px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    position: relative;
+    top: -100px;
+    left: 340px;
 }
 
-.logo {
-    color: #fcb900;
-    font-size: 60px;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    padding-left: 20px;
-    float: left;
-    padding-top: 10px;
-    margin-top: 5px;
-
+/*
     text-shadow: 1px 1px 1px #000000,
         1px 2px 1px #5b9ab8,
         1px 3px 1px #5d95bb,
@@ -55,12 +54,17 @@
         1px 22px 10px rgba(16, 16, 16, 0.2),
         1px 25px 35px rgba(16, 16, 16, 0.2),
         1px 30px 60px rgba(16, 16, 16, 0.4);
-}
+}*/
 
+/*Home, About me, Contact*/
 .menu {
     width: 400px;
     float: right;
     height: 70px;
+    bottom: 600px;
+    top: 2px;
+    position: relative;
+    top: -100px;
 }
 
 ul {
@@ -68,6 +72,7 @@ ul {
     display: flex;
     justify-content: center;
     align-items: center;
+    color: rgb(22, 166, 250);
 }
 
 ul li {
@@ -75,76 +80,36 @@ ul li {
     margin-left: 62px;
     margin-top: 27px;
     font-size: 16px;
+    color: rgb(22, 166, 250);
 }
 
 ul li a {
     text-decoration: none;
-    color: #fff;
+    color: rgb(22, 166, 250);
     font-family: Arial;
     font-weight: bold;
     transition: 0.4s ease-in-out;
+
 }
 
 /*Home, About me, Contact*/
 ul li a:hover {
-    color: #fcb900;
+    color: rgb(170, 200, 218);
 }
 
-.search {
-    width: 330px;
-    float: left;
-    margin-left: 270px;
-}
-
-.srch {
-    font-family: 'Times New Roman';
-    width: 200px;
-    height: 40px;
-    background: transparent;
-    border: 1px solid white;
-    margin-top: 13px;
-    color: #fff;
-    border-right: none;
-    font-size: 16px;
-    float: left;
-    padding: 10px;
-    border-bottom-left-radius: 5px;
-    border-top-left-radius: 5px;
-}
-
-.btn {
-    width: 100px;
-    height: 40px;
-    background: #fcb900;
-    border: 2px solid rgb(209, 204, 204);
-    margin-top: 13px;
-    color: #fff;
-    font-size: 15px;
-    border-bottom-right-radius: 5px;
-    border-bottom-right-radius: 5px;
-    transition: 0.2s ease;
-    cursor: pointer;
-}
-
-.btn:hover {
-    color: #000;
-}
-
-.btn:focus {
-    outline: none;
-}
-
-.srch:focus {
-    outline: none;
-}
-
-/*I am looking for a job*/
 .content {
     width: 1200px;
     height: auto;
     margin: auto;
-    color: #fcb900;
+    color: rgb(22, 166, 250);
     position: relative;
+    font-family: 'Times New Roman';
+    font-size: 30px;
+    padding-left: 20px;
+    margin-top: 9%;
+    letter-spacing: 2px;
+    bottom: -120px;
+    left: -20px;
 }
 
 .content .par {
@@ -157,24 +122,26 @@ ul li a:hover {
     color: #fff;
 }
 
-.content h1 {
-    font-family: 'Times New Roman';
-    font-size: 50px;
-    padding-left: 20px;
-    margin-top: 9%;
-    letter-spacing: 2px;
+/*I am looking for a job*/
+.par {
+    position: relative;
+    color: #ececec;
+    bottom: -240px;
+    left: 0px;
+    font-size: 25px;
+    background-color: rgb(22, 166, 250);
+    width: 30%;
+    border-radius: 8px;
 }
 
+/*VIEW RESUME*/
 .cn {
-    position: absolute;
-    bottom: -30%;
-}
-
-
-.content .cn {
+    position: relative;
+    bottom: -360px;
+    left: -20px;
     width: 160px;
     height: 40px;
-    background: #fcb900;
+    background: rgb(22, 166, 250);
     border: none;
     margin-bottom: 10px;
     margin-left: 20px;
@@ -182,128 +149,32 @@ ul li a:hover {
     border-radius: 10px;
     cursor: pointer;
     transition: .4s ease;
-
 }
 
-.content .cn a {
+.cn a {
     text-decoration: none;
     color: #000;
     transition: .3s ease;
 }
 
 .cn:hover {
-    background-color: #fff;
-
+    background-color: #ececec;
 }
 
-.content span {
-    color: #ffffff;
-    font-size: 65px
-}
-
-.form {
-    width: 250px;
-    height: 380px;
-    background: linear-gradient(to top, rgba(0, 0, 0, 0.8)50%, rgba(0, 0, 0, 0.8)50%);
-    position: absolute;
-    top: -20px;
-    left: 870px;
-    transform: translate(0%, -5%);
-    border-radius: 10px;
-    padding: 25px;
-}
-
-.form h2 {
-    width: 220px;
-    font-family: sans-serif;
-    text-align: center;
-    color: #fcb900;
-    font-size: 22px;
-    background-color: #fff;
-    border-radius: 10px;
-    margin: 2px;
-    padding: 8px;
-}
-
-.form input {
-    width: 240px;
-    height: 35px;
-    background: transparent;
-    border-bottom: 1px solid #0273cf;
-    border-top: none;
-    border-right: none;
-    border-left: none;
-    color: #fff;
-    font-size: 15px;
-    letter-spacing: 1px;
-    margin-top: 30px;
-    font-family: sans-serif;
-}
-
-.form input:focus {
-    outline: none;
-}
-
-::placeholder {
-    color: #fff;
-    font-family: Arial;
-}
-
-.btnn {
-    width: 240px;
-    height: 40px;
-    background: #fcb900;
-    border: none;
-    margin-top: 30px;
-    font-size: 18px;
-    border-radius: 10px;
-    cursor: pointer;
-    color: #fff;
-    transition: 0.4s ease;
-}
-
-.btnn:hover {
-    background: #fff;
-    color: #fcb900;
-}
-
-.btnn a {
-    text-decoration: none;
-    color: #000;
-    font-weight: bold;
-}
-
-.form .link {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 17px;
-    padding-top: 20px;
-    text-align: center;
-}
-
-.form .link a {
-    text-decoration: none;
-    color: #0273cf;
-}
-
-.liw {
-    padding-top: 15px;
-    padding-bottom: 10px;
-    text-align: center;
-}
 
 .icons {
-    position: absolute;
-    bottom: -40%;
+    position: relative;
+    bottom: -360px;
+    left: -20px;
 }
-
 
 .icons a {
     text-decoration: none;
-    color: #fff;
+    color: rgb(22, 166, 250);
 }
 
 .icons ion-icon {
-    color: #fff;
+    color: rgb(22, 166, 250);
     font-size: 30px;
     padding-left: 14px;
     padding-top: 5px;
@@ -312,5 +183,4 @@ ul li a:hover {
 
 .icons ion-icon:hover {
     color: #0273cf;
-
 }
