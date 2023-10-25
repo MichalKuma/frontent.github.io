@@ -26,12 +26,10 @@ p {
 
 .text-center {
     color: #ececec;
-    position: relative;
-    left: 280px;
     background-color: rgb(22, 166, 250);
     font-size: 60px;
     border-radius: 5px;
-    width: 50%
+    color: rgb(12, 70, 117);
 }
 
 .light-grey {
