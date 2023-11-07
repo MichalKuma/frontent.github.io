@@ -1,0 +1,297 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif
+}
+
+.content {
+    max-width: 1250px;
+    margin: auto;
+    padding: 0px 30px;
+}
+
+.navbar {
+    position: fixed;
+    z-index: 5;
+    width: 100%;
+    padding: 15px 0;
+
+    transition: all 0.4s ease;
+}
+
+.navbar.sticky {
+    padding: 10px 0;
+    background: rgb(163, 58, 54);
+}
+
+.navbar .content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/*Logo Michal*/
+.navbar .logo a {
+    color: rgb(255, 255, 255);
+    font-size: 40px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.navbar .menu {
+    display: inline-flex;
+}
+
+.menu li {
+    list-style: none;
+}
+
+/*Menu*/
+.menu li a {
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    font-weight: 500;
+    margin-left: 40px;
+    text-decoration: none;
+    transition: all 0.4s ease;
+}
+
+.menu li a:hover {
+    color: rgb(143, 141, 141);
+}
+
+.banner {
+    height: 100vh;
+    background: url("background.webp") no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.about {
+    padding: 40px 0;
+}
+
+.title1 {
+    color: white;
+    font-size: 50px;
+    font-weight: 700;
+    position: relative;
+    top: -20vh;
+    display: block;
+    margin: auto;
+    text-align: center;
+    word-break: break-all;
+}
+
+.about .title {
+    font-size: 50px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.skills {
+    font-size: 50px;
+    font-family: 700;
+    text-align: center;
+}
+
+.about p {
+    font-size: 25px;
+    padding-top: 20px;
+    text-align: justify;
+    line-height: 160%;
+}
+
+/*Icon-top right corner*/
+.icon {
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    cursor: pointer;
+    display: none;
+}
+
+.icon.cancel-btn {
+    position: absolute;
+    right: 30px;
+    top: 20px;
+}
+
+.hr1 {
+    border-color: red;
+
+}
+
+.img {
+    position: relative;
+    bottom: -400px;
+    display: block;
+    margin: auto;
+    border-radius: 260px;
+    border-color: #ffffff;
+    flex-wrap: wrap;
+}
+
+.projectcal {
+    font-size: 50px;
+    font-family: 700;
+    text-align: center;
+}
+
+.calculator-img {
+    width: 30%;
+    padding-top: 50px;
+    display: block;
+    margin: auto;
+}
+
+
+/*
+.img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+*/
+.prog-icons {
+    font-size: 160px;
+    text-align: center;
+}
+
+
+@media (max-width: 868px) {
+    body.disabledScroll {
+        overflow: hidden;
+    }
+
+    .icon {
+        display: block;
+    }
+
+    .icon.hide {
+        display: none;
+    }
+
+    .navbar .menu {
+        position: fixed;
+        top: 0;
+        left: -100%;
+        height: 100vh;
+        width: 100%;
+        max-width: 400px;
+        background: #313131;
+        display: block;
+        padding: 40px 0;
+        text-align: center;
+        transition: all 0.4 ease;
+    }
+
+    .navbar .menu.active {
+        left: 0%;
+    }
+
+    .navbar .menu li {
+        margin-top: 45px;
+    }
+
+    .navbar .menu li a {
+        font-size: 23px;
+    }
+
+    .hr1 {
+        border-color: red;
+    }
+
+    .img {
+        position: relative;
+        bottom: -40%;
+        padding-bottom: 200;
+        border-radius: 260px;
+        border-color: #0273cf;
+        display: block;
+        margin: auto;
+        flex-wrap: wrap;
+        width: 80%;
+    }
+
+    .title1 {
+        position: relative;
+        display: block;
+        margin: auto;
+        font-size: 20px;
+    }
+
+    .about p {
+        font-size: 20px;
+        padding-top: 20px;
+        text-align: justify;
+        line-height: 120%;
+    }
+}
+
+
+
+
+
+
+
+
+/*.logo {
+    color: rgb(22, 166, 250);
+    padding-left: 400px;
+    margin-top: 10px;
+    font-size: 30px;
+    float: left;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    position: absolute;
+    display: flex;
+    justify-content: left;
+}
+
+
+.menu {
+    position: relative;
+    left: 1000px
+}
+
+ul {
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(22, 166, 250);
+}
+
+ul li {
+    list-style: none;
+    margin-left: 62px;
+    margin-top: 27px;
+    font-size: 16px;
+    color: rgb(22, 166, 250);
+}
+
+ul li a {
+    text-decoration: none;
+    color: rgb(22, 166, 250);
+    font-family: Arial;
+    font-weight: bold;
+    transition: 0.4s ease-in-out;
+
+}
+
+/*Home, About me, Contact*/
+/*
+ul li a:hover {
+    color: rgb(61, 93, 252);
+    text-shadow: 0 0 10px #71e8f8,
+        0 0 20px #75cee9,
+        0 0 30px #45d0e2,
+        0 0 40px #0da8c4,
+        0 0 50px #140883;
+}
+
+*/
