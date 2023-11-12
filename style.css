@@ -4,7 +4,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif
+    font-family: Verdana, Geneva, Tahoma, sans-serif
 }
 
 .content {
@@ -24,7 +24,8 @@
 
 .navbar.sticky {
     padding: 10px 0;
-    background: rgb(163, 58, 54);
+    background-color: rgba(0, 0, 0, 0.8);
+
 }
 
 .navbar .content {
@@ -35,10 +36,13 @@
 
 /*Logo Michal*/
 .navbar .logo a {
-    color: rgb(255, 255, 255);
     font-size: 40px;
     font-weight: 600;
     text-decoration: none;
+    background: linear-gradient(90deg, rgb(71, 130, 255), rgb(216, 88, 88));
+    text-transform: uppercase;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .navbar .menu {
@@ -51,7 +55,7 @@
 
 /*Menu*/
 .menu li a {
-    color: rgb(255, 255, 255);
+    color: rgb(30, 102, 209);
     font-size: 20px;
     font-weight: 500;
     margin-left: 40px;
@@ -60,12 +64,12 @@
 }
 
 .menu li a:hover {
-    color: rgb(143, 141, 141);
+    color: rgb(79, 149, 255);
 }
 
 .banner {
     height: 100vh;
-    background: url("background.webp") no-repeat;
+    /*background: url("background.jpg") no-repeat;*/
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -76,26 +80,30 @@
 }
 
 .title1 {
-    color: white;
+    color: rgb(36, 33, 33);
     font-size: 50px;
-    font-weight: 700;
+    font-weight: 500;
     position: relative;
-    top: -20vh;
+    top: -30vh;
     display: block;
     margin: auto;
     text-align: center;
     word-break: break-all;
+    background: linear-gradient(90deg, rgb(71, 130, 255), rgb(209, 24, 24));
+    text-transform: uppercase;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .about .title {
     font-size: 50px;
-    font-weight: 700;
+    font-weight: 200;
     text-align: center;
 }
 
 .skills {
     font-size: 50px;
-    font-family: 700;
+    font-weight: 200;
     text-align: center;
 }
 
@@ -104,11 +112,13 @@
     padding-top: 20px;
     text-align: justify;
     line-height: 160%;
+    color: rgb(54, 54, 54);
+    ;
 }
 
 /*Icon-top right corner*/
 .icon {
-    color: rgb(255, 255, 255);
+    color: rgb(117, 117, 117);
     font-size: 20px;
     cursor: pointer;
     display: none;
@@ -127,17 +137,18 @@
 
 .img {
     position: relative;
-    bottom: -400px;
+    bottom: -280px;
     display: block;
     margin: auto;
     border-radius: 260px;
     border-color: #ffffff;
     flex-wrap: wrap;
+    border: 3px solid rgb(85, 100, 182);
 }
 
 .projectcal {
     font-size: 50px;
-    font-family: 700;
+    font-weight: 200;
     text-align: center;
 }
 
@@ -148,6 +159,62 @@
     margin: auto;
 }
 
+.icons-media {
+    position: relative;
+    bottom: -320px;
+    display: block;
+    margin: auto;
+    text-align: center;
+    size: 200px;
+}
+
+.icons-media a {
+    text-decoration: none;
+    color: rgb(22, 166, 250);
+}
+
+.icons-media ion-icon {
+    color: rgb(110, 109, 109);
+    font-size: 40px;
+    padding-left: 25px;
+    padding-right: 25px;
+    transition: 0.3s ease;
+    text-align: center;
+}
+
+.icons-media ion-icon:hover {
+    color: #0273cf;
+}
+
+.button {
+    position: relative;
+    text-align: center;
+}
+
+.cn {
+    position: relative;
+    bottom: -280px;
+    background: rgb(110, 109, 109);
+    border: none;
+    font-size: 18px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .4s ease;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 6px;
+    padding-right: 6px;
+}
+
+.cn a {
+    text-decoration: none;
+    color: #ffffff;
+    transition: .3s ease;
+}
+
+.cn:hover {
+    background-color: #0273cf;
+}
 
 /*
 .img {
@@ -183,7 +250,7 @@
         height: 100vh;
         width: 100%;
         max-width: 400px;
-        background: #313131;
+        background-color: rgba(0, 0, 0, 0.8);
         display: block;
         padding: 40px 0;
         text-align: center;
@@ -208,28 +275,87 @@
 
     .img {
         position: relative;
-        bottom: -40%;
+        bottom: -26%;
         padding-bottom: 200;
-        border-radius: 260px;
-        border-color: #0273cf;
+        border-radius: 400px;
+        border-color: 3px solid rgb(85, 100, 182);
         display: block;
         margin: auto;
         flex-wrap: wrap;
-        width: 80%;
+        width: 360px;
     }
 
     .title1 {
         position: relative;
         display: block;
         margin: auto;
-        font-size: 20px;
+        font-size: 26px;
+        top: -240px;
     }
 
     .about p {
         font-size: 20px;
         padding-top: 20px;
-        text-align: justify;
+        text-align: left;
         line-height: 120%;
+        color: rgb(54, 54, 54);
+    }
+
+    .button {
+        position: relative;
+        text-align: center;
+    }
+
+    .cn {
+        position: relative;
+        bottom: -170px;
+        background: rgb(110, 109, 109);
+        border: none;
+        font-size: 16px;
+        border-radius: 10px;
+        cursor: pointer;
+        transition: .4s ease;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 6px;
+        padding-right: 6px;
+    }
+
+    .cn a {
+        text-decoration: none;
+        color: #ffffff;
+        transition: .3s ease;
+    }
+
+    .cn:hover {
+        background-color: #0273cf;
+    }
+
+    .icons-media {
+        position: relative;
+        bottom: -190px;
+        display: block;
+        margin: auto;
+        text-align: center;
+        size: 200px;
+    }
+
+    .icons-media a {
+        text-decoration: none;
+        color: rgb(22, 166, 250);
+    }
+
+    .icons-media ion-icon {
+        color: rgb(110, 109, 109);
+        font-size: 26px;
+        padding-left: 10px;
+        padding-right: 10px;
+        transition: 0.3s ease;
+        text-align: center;
+    }
+
+    .icons-media ion-icon:hover {
+        color: #0273cf;
     }
 }
 
