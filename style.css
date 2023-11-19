@@ -108,7 +108,7 @@
 }
 
 .about p {
-    font-size: 25px;
+    font-size: 20px;
     padding-top: 20px;
     text-align: justify;
     line-height: 160%;
@@ -174,7 +174,7 @@
 }
 
 .icons-media ion-icon {
-    color: rgb(110, 109, 109);
+    color: #0273cf;
     font-size: 40px;
     padding-left: 25px;
     padding-right: 25px;
@@ -183,7 +183,7 @@
 }
 
 .icons-media ion-icon:hover {
-    color: #0273cf;
+    color: #024881;
 }
 
 .button {
@@ -194,7 +194,7 @@
 .cn {
     position: relative;
     bottom: -280px;
-    background: rgb(110, 109, 109);
+    background: #0273cf;
     border: none;
     font-size: 18px;
     border-radius: 10px;
@@ -213,8 +213,9 @@
 }
 
 .cn:hover {
-    background-color: #0273cf;
+    background-color: #024881;
 }
+
 
 /*
 .img {
@@ -309,7 +310,7 @@
     .cn {
         position: relative;
         bottom: -170px;
-        background: rgb(110, 109, 109);
+        background: #0273cf;
         border: none;
         font-size: 16px;
         border-radius: 10px;
@@ -328,7 +329,7 @@
     }
 
     .cn:hover {
-        background-color: #0273cf;
+        background-color: #024881;
     }
 
     .icons-media {
@@ -346,7 +347,7 @@
     }
 
     .icons-media ion-icon {
-        color: rgb(110, 109, 109);
+        color: #0273cf;
         font-size: 26px;
         padding-left: 10px;
         padding-right: 10px;
@@ -355,7 +356,7 @@
     }
 
     .icons-media ion-icon:hover {
-        color: #0273cf;
+        color: #024881;
     }
 }
 
