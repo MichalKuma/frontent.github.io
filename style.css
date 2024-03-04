@@ -207,6 +207,7 @@
     padding-bottom: 10px;
     padding-left: 6px;
     padding-right: 6px;
+    margin-right: 6px;
 }
 
 .cn a {
@@ -216,6 +217,32 @@
 }
 
 .cn:hover {
+    background-color: #024881;
+}
+
+.cn2 {
+    position: relative;
+    bottom: -280px;
+    background: #0273cf;
+    border: none;
+    font-size: 18px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .4s ease;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 6px;
+    padding-right: 6px;
+    margin-left: 6px;
+}
+
+.cn2 a {
+    text-decoration: none;
+    color: #ffffff;
+    transition: .3s ease;
+}
+
+.cn2:hover {
     background-color: #024881;
 }
 
