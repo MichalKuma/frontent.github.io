@@ -337,31 +337,6 @@
         text-align: center;
     }
 
-    .cn {
-        position: relative;
-        bottom: -170px;
-        background: #0273cf;
-        border: none;
-        font-size: 16px;
-        border-radius: 10px;
-        cursor: pointer;
-        transition: .4s ease;
-        padding-top: 10px;
-        padding-bottom: 10px;
-        padding-left: 6px;
-        padding-right: 6px;
-    }
-
-    .cn a {
-        text-decoration: none;
-        color: #ffffff;
-        transition: .3s ease;
-    }
-
-    .cn:hover {
-        background-color: #024881;
-    }
-
     .icons-media {
         position: relative;
         bottom: -190px;
