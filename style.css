@@ -368,78 +368,9 @@
 
 
 
-/*  ANIMATION PROGRAMMING ICONS  */
-.tag-list {
-    display: flex;
-    position: relative;
-    margin: 0;
-    padding-inline: 0;
-    list-style: none;
-    font-size: 40px;
-}
 
-.tag-list li {
-    padding: 1rem;
-    background: rgb(187, 187, 187);
-    border-radius: 0.5rem;
-    box-shadow: 0 0.5rem 1rem -0.25rem rgb(92, 92, 92);
-}
 
-.responsive-icons {
-    display: flex;
-    position: relative;
-    color: rgb(109, 109, 109);
-    right: 0;
-    justify-content: center;
-}
 
-.scroller {
-    max-width: 300px;
-    display: flex;
-    position: relative;
-    top: 120px;
-    text-shadow: 10px 10px 10px rgb(154, 154, 180);
-    margin: 0;
-    padding-inline: 0;
-    list-style: none;
-}
-
-.scroller__inner {
-    padding-block: 1rem;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1rem;
-}
-
-.scroller[data-animated="true"] {
-    overflow: hidden;
-
-    -webkit-mask: linear-gradient(90deg,
-            transparent,
-            white 20%,
-            white 80%,
-            transparent);
-    mask: linear-gradient(90deg, transparent, white 20%, white 80%, transparent);
-}
-
-.scroller[data-animated=true] .scroller__inner {
-    width: max-content;
-    flex-wrap: nowrap;
-    animation:
-        scroll var(--_animation-duration, 40s)
-        /*  var(--_animation-direction, foward)  */
-        linear infinite;
-}
-
-@keyframes scroll {
-    to {
-        transform: translate(calc(-50% - 0.5rem));
-    }
-}
-
-.test {
-    background: red !important;
-}
 
 /*.logo {
     color: rgb(22, 166, 250);
