@@ -12,6 +12,11 @@ body {
     /* Adjust for fixed navbar */
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
+
 /* Navbar container */
 .navbar {
     width: 100%;
