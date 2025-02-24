@@ -242,13 +242,106 @@ html {
 
 
 /* Profile photo styling */
+.my-photo-wrapper {
+    position: relative;
+    display: inline-block;
+}
+
+.my-photo-wrapper {
+    position: relative;
+    display: inline-block;
+}
+
 .my-photo {
     width: 300px;
     height: 300px;
-    border-radius: 50%;
     object-fit: cover;
     margin-top: 20px;
+    border-radius: 20px;
+    background: #333;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2), 0 0 60px rgba(0, 255, 255, 0.6);
+    background: radial-gradient(circle, rgba(51, 51, 51, 1) 40%, rgba(0, 0, 0, 0) 100%);
+    transform: perspective(600px) rotateX(10deg) rotateY(-5deg) scale(1.05);
+    transition: transform 0.4s ease, box-shadow 0.4s ease, background 0.4s ease;
+    position: relative;
+    z-index: 1;
 }
+
+.my-photo:hover {
+    transform: perspective(600px) rotateX(0deg) rotateY(0deg) scale(1.1);
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.3), 0 0 80px rgba(0, 255, 255, 0.8);
+    background: radial-gradient(circle, rgba(51, 51, 51, 1) 20%, rgba(0, 0, 0, 0) 80%);
+}
+
+.my-photo-wrapper::before {
+    content: '';
+    position: absolute;
+    top: -5px;
+    left: -20px;
+    width: calc(100% + 40px);
+    height: calc(100% + 40px);
+    border-radius: 25px;
+    box-shadow: 0 0 40px rgba(0, 255, 255, 0.4), 0 0 80px rgba(0, 255, 255, 0.6);
+    pointer-events: none;
+    z-index: 0;
+    animation: floating 4s ease-in-out infinite;
+}
+
+@keyframes floating {
+    0% {
+        transform: translateY(0) scale(1);
+        opacity: 0.7;
+    }
+
+    50% {
+        transform: translateY(-10px) scale(1.05);
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateY(0) scale(1);
+        opacity: 0.7;
+    }
+}
+
+.my-photo-wrapper .flying-effect {
+    position: absolute;
+    top: -50px;
+    left: -50px;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: -1;
+}
+
+.my-photo-wrapper .flying-effect span {
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    background-color: rgba(0, 255, 255, 0.7);
+    border-radius: 50%;
+    animation: flying 3s linear infinite;
+}
+
+@keyframes flying {
+    0% {
+        transform: translateY(0) translateX(0);
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateY(-20px) translateX(20px);
+        opacity: 0;
+    }
+}
+
+
+
+
+
+
+
+
 
 /* Scroller section */
 .scroller {
