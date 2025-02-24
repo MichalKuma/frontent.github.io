@@ -500,6 +500,7 @@ html {
     /* Smooth transition for hover effect */
 }
 
+
 .project-card img.project-image {
     width: 40px;
     /* Initial size */
@@ -515,6 +516,25 @@ html {
 
 /* Hover effect for the image */
 .project-card:hover img.project-image {
+    transform: scale(1.5);
+    /* Scale the image to 110% of its original size */
+}
+
+.project-card img.project-image-2 {
+    width: 70px;
+    /* Initial size */
+    height: auto;
+    margin: 10px 0;
+    /* Space between h3 and p */
+    display: block;
+    max-width: 100%;
+    border-radius: 4px;
+    transition: transform 0.3s ease;
+    /* Smooth scaling transition */
+}
+
+/* Hover effect for the image */
+.project-card:hover img.project-image-2 {
     transform: scale(1.5);
     /* Scale the image to 110% of its original size */
 }
